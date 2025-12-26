@@ -1,0 +1,94 @@
+
+:root {
+    --primary-red: #c0392b;   
+    --hover-red: #e74c3c;    
+    --bg-light: #f4f7f6;      
+    --text-dark: #2c3e50;     
+    --shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-edit {
+    max-width: 450px;
+    width: 90%;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    border-top: 5px solid var(--primary-red); 
+}
+
+.form-edit h2 {
+    text-align: center;
+    color: var(--primary-red);
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-edit label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.form-edit input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+
+.form-edit input:focus {
+    border-color: var(--primary-red);
+    outline: none;
+    box-shadow: 0 0 8px rgba(192, 57, 43, 0.2);
+}
+
+.btn-submit {
+    background: var(--primary-red);
+    color: white;
+    border: none;
+    padding: 14px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background: var(--hover-red);
+}
+
+.form-edit p a {
+    color: #7f8c8d;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.form-edit p a:hover {
+    color: var(--primary-red);
+}

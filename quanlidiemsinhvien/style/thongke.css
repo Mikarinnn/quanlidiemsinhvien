@@ -1,0 +1,95 @@
+.chart-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+.filter-section {
+    background: white;
+    max-width: 800px; 
+    margin: 30px auto 0;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-section select, 
+.filter-section input {
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 2px solid #3498db;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.filter-section select:focus, 
+.filter-section input:focus {
+    border-color: #2980b9;
+}
+
+.btn-filter {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-filter:hover {
+    background-color: #1f6391;
+}
+
+.clear-filter {
+    color: #e74c3c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.clear-filter:hover {
+    text-decoration: underline;
+}
+
+.chart-note {
+    margin-top: 20px;
+    color: #7f8c8d;
+    font-size: 15px;
+}
+
+.chart-note b {
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+.no-data {
+    margin-top: 50px;
+}
+
+.no-data .error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.no-data .hint {
+    color: #7f8c8d;
+    font-size: 13px;
+}

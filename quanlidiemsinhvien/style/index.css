@@ -1,0 +1,81 @@
+
+:root {
+    --admin-color: #c0392b;   
+    --student-color: #2980b9; 
+    --bg-light: #f4f7f6;
+    --text-dark: #333;
+    --white: #ffffff;
+}
+
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    margin: 0; 
+    background-color: var(--bg-light); 
+}
+
+header { 
+    color: white; 
+    padding: 1rem 2rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-daotao { background-color: var(--admin-color); }
+.header-sinhvien { background-color: var(--student-color); }
+
+.container { 
+    padding: 30px; 
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+.dashboard-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px; 
+    margin-top: 30px; 
+}
+
+/* Cấu trúc Card chức năng */
+.card {
+    background: var(--white); 
+    padding: 25px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+    text-align: center;
+    transition: all 0.3s ease; 
+    text-decoration: none; 
+    color: var(--text-dark);
+    display: block;
+    border: 1px solid #eee;
+}
+
+.card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.card .icon { 
+    font-size: 45px; 
+    margin-bottom: 15px; 
+    display: block; 
+}
+
+.card h3 { margin: 10px 0; color: #2c3e50; }
+.card p { font-size: 0.9rem; color: #7f8c8d; }
+
+/* Nút đăng xuất */
+.logout-btn { 
+    background: rgba(255, 255, 255, 0.2); 
+    color: white; 
+    padding: 8px 20px; 
+    border-radius: 20px; 
+    text-decoration: none; 
+    font-weight: 500;
+    transition: background 0.3s;
+    border: 1px solid white;
+}
+
+.logout-btn:hover { background: white; color: var(--text-dark); }
